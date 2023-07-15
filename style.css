@@ -1,0 +1,91 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.header-title {
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -1.62px;
+}
+
+.header-description h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-description p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.image-container{
+    display: flex;
+}
+
+.identity{
+    writing-mode: vertical-rl
+}
+
+.teammate-2{
+    position: relative;
+    top: 50px;
+}
+.teammate-5{
+    position: relative;
+    top: 50px;
+}
+
+.teammate{
+    margin-bottom: 50px;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    margin: 50px 200px;
+}
+
+.image-container img{
+    height: 450px;
+    width: 300px;
+}
+
+@media screen and (max-width: 576px){
+    body{
+        width: 100vw;
+    }
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-description p{
+        font-size: 10px;
+    }
+    .main-container{
+        grid-template-columns: repeat(2, 100px);
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 50px;
+        justify-content: center;
+    }
+    .image-container img{
+        height: 150px;
+        width: 100px;
+    }
+    .teammate-4{
+        position: relative;
+        top: 50px;
+    }
+    .teammate-6{
+        position: relative;
+        top: 100px;
+    }
+}
